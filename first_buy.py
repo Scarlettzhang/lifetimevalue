@@ -20,7 +20,7 @@ y_train = y_train.values
 y_test = y_test.values
 
 
-clf = svm.SVC(C=0.6,kernel='rbf')
+clf = svm.SVC(C=0.6, kernel='rbf')
 clf.fit(X_train,y_train)
 p = clf.predict(X_test)
 m = len(y_test)
